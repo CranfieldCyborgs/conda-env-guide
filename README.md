@@ -50,9 +50,11 @@ Create new with prior dependencies link Tensorflow:
 `conda create -n nameOfEnv tensorflow` or
 `conda create -n nameOfEnv tensorflow-gpu`
 
-You can specify the location of this new environment by:
+You can specify the location of this new environment by, but then you won't be able to give it a name:
 
-`conda create -n nameOfEnv tensorflow -p .\envs`
+`conda create tensorflow -p .\envs`
+
+> **NOTE:** The prefix `.\envs` creates a folder of the name `envs` in the current directory with all the dependencies for the environment.
 
 Enter, or activate, the environment if installed in the Conda root directory by:
 
