@@ -68,7 +68,9 @@ Or if installed in the `envs` folder, activate it using:
 
 To export the environment details to a file so that someone else can create an environment identical to it:
 
-`conda env export > environment.yml`
+`conda env export --no-builds > environment.yml`
+
+> The `--no-builds` flags omits the build nunber in case the combination of version and build does not exist.
 
 ## Known issues and fixes <a name="export-known-issues"></a>
 
